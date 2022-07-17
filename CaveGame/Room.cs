@@ -1,11 +1,16 @@
 public class Room
 {
-    public string name;
-    public List<GameObject> gameObjects = new List<GameObject>();
+    public string name { get; set; }
+    public List<GameObjectJSON> gameObjectsJSON { get; set; }
+    public List<GameObject> gameObjects;
     public Room()
     {
-        List<GameObject> objects = new List<GameObject>();
 
-        objects.Add(new Dumb(new Vector2(100, 100)));
     }
+}
+public class GameObjectJSON
+{
+    public string type { get; set; }
+    public int xpos { get; set; }
+    public int ypos { get; set; }
 }

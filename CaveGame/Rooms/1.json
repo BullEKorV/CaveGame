@@ -1,0 +1,15 @@
+{
+    "name": "1",
+    "gameObjectsJSON": [
+        {
+            "type": "player",
+            "xpos": -2,
+            "ypos": -1
+        },
+        {
+            "type": "tile",
+            "xpos": -2,
+            "ypos": -1
+        }
+    ]
+}
