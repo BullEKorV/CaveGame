@@ -8,9 +8,8 @@ public class Game
         rooms = LoadAllRooms();
         player = new Player();
 
-        Console.WriteLine(rooms.Count);
-
-        currentRoom = rooms["1"];
+        // currentRoom = rooms["1"];
+        currentRoom = new Room();
     }
     public void ChangeRoom(string room)
     {
@@ -18,7 +17,10 @@ public class Game
     }
     public void Update()
     {
-
+        if (Raylib.IsKeyPressed(KeyboardKey.KEY_B))
+        {
+            currentRoom.gameObjects.Add(new Player());
+        }
     }
     public void Draw()
     {
